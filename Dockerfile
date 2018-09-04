@@ -14,6 +14,7 @@ ENTRYPOINT  Function Test-DetectionMethod {;\
                 if(C:\psadt-tester\DetectionMethod.ps1){Write-Host "Application is installed"}else{Write-Host "Application is NOT installed"};\
                 Write-Host "------------------------------------------------------------------------------------------------";\
             };\
+            Test-DetectionMethod;\
             C:\psadt-tester\Deploy-Application.ps1 Install;\
             Test-DetectionMethod;\
             C:\psadt-tester\Deploy-Application.ps1 Uninstall;\
